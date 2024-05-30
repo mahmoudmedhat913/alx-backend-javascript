@@ -1,6 +1,4 @@
-/*eslint-disable no-underscore-dangle*/
 export default class HolbertonCourse {
-  /*create class*/
   constructor(name, length, students) {
     this.name = name;
     this.length = length;
