@@ -29,3 +29,4 @@ export default class Currency {
     }
     this._name = name;
   }
+}
