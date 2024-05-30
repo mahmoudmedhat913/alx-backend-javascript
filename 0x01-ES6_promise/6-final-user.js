@@ -17,7 +17,7 @@ export default async function handleProfileSignup(
     });
   }
 
-  try { 
+  try {
     const upload = await uploadPhoto(fileName);
     res.push({ status: 'fulfilled', value: upload });
   } catch (err) {
