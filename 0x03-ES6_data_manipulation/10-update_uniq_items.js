@@ -8,6 +8,6 @@ const updateUniqueItems = (items) => {
     }
   }
   return items;
-}
+};
 
 export default updateUniqueItems;
