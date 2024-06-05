@@ -11,7 +11,7 @@ interface Directors extends Teacher {
   numberOfReports: number,
 }
 
-const pinTeacher = (firstName:string, lastName:string) : string => `${firstName.charAt(0)}.${lastName}`;
+const printTeacher = (firstName:string, lastName:string) : string => `${firstName.charAt(0)}.${lastName}`;
 
 class StudentClass {
   firstName: string;
