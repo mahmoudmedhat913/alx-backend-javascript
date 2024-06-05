@@ -27,7 +27,7 @@ export const createEmployee = (salary: number | string): Teacher | Director => N
 export const isDirector = (employee: Teacher | Director): boolean => employee instanceof Director;
 
 export const executeWork = (employee: Teacher | Director): void => {
-  const work = employee instanceof Teacher? employee.workTeacherTasks() : employees.workDirectorTasks();
+  const work = employee instanceof Teacher? employee.workTeacherTasks() : employee.workDirectorTasks();
   console.log(work)
 }
 
