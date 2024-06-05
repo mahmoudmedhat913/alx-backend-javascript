@@ -17,7 +17,7 @@ function createStudent(student: Student) {
 const student1 = createStudent({ firstname: 'john', lastname: "charles", age: 12, location: "Nairobi"})
 const student2 = createStudent({ firstname: 'Donald', lastname: "charles", age: 32, location: "USA"})
 
-const studentList = [ student1, student2 ];
+const studentsList = [ student1, student2 ];
 
 const table = document.createElement("table");
 const trow = document.createElement("tr");
