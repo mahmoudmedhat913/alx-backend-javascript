@@ -3,9 +3,9 @@ interface MajorCredits {
   brand?: string;
 }
 
-interface MinorCredits {
+interface MinorCredits  {
   credits: number;
-  brand?: string;
+  brand: string;
 }
 
 export const sumMajorCredits = (subject1: MajorCredits, subject2: MajorCredits): number => {
