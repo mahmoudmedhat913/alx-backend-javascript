@@ -3,6 +3,8 @@ const fs = require('fs');
 
 /**
  * count the student in csv file
+ * @param {String} dataPath
+ * @throws {Error} if database cannot be loaded
  */
 const countStudents = (dataPath) => {
   if (!fs.existsSync(dataPath) || !fs.statSync(dataPath).isFile()) {
