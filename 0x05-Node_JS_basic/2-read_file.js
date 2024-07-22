@@ -20,14 +20,11 @@ const countStudents = (dataPath) => {
     const studentPropValues = studentRecord.slice(0, -1);
     const field = studentRecord[studentRecord.length - 1];
     groups[field] = groups[field] || [];
-    groups[field].push(Object.fromEntries(studentPropNames
-      .map((propName, idx) => [propName, studentPropValues[idx]])));
+    groups[field].push(Object.fromEntries(studentPropNames.map((propName, idx) => [propName, studentPropValues[idx]])));
     return groups;
   }, {});
 
-  const totalStudents = Object
-    .values(studentGroups)
-    .reduce((pre, cur) => pre + cur.length, 0);
+  const totalStudents = Object.values(studentGroups).reduce((pre, cur) => pre + cur.length, 0);
   console.log(`Number of students: ${totalStudents}`);
   for (const [field, group] of Object.entries(studentGroups)) {
     const studentNames = group.map((student) => student.firstname).join(', ');
