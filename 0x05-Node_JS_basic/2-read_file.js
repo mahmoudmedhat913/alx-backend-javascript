@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 /**
- * count the student in csv file
+ * Count the student in csv file
  * @param {String} dataPath
  * @throws {Error} if database cannot be loaded
  */
