@@ -26,7 +26,7 @@ const countStudents = (dataPath) => new Promise((resolve, reject) => {
         const field = studentRecord[studentRecord.length - 1];
         if (!Object.keys(studentGroups).includes(field)) {
           studentGroups[field] = [];
-	}
+       }
 	const studentEntries = studentPropNames
           .map((propName, idx) => [propName, studentPropValues[idx]]);
         studentGroups[field].push(Object.fromEntries(studentEntries));
