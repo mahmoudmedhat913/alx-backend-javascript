@@ -9,7 +9,7 @@ function getPaymentTokenFromAPI(success) {
     if (success) {
       resolve({ data: 'Successful response from the API' });
     } else {
-      // reject('Error: API call failed');
+      reject('Error: API call failed');
     }
   });
 }
