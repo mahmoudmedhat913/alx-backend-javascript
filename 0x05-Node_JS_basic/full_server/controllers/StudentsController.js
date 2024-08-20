@@ -5,8 +5,8 @@ import { readDatabase } from '../utils.js';
 export class StudentsController {
   static async getAllStudents(req, res) {
     try {
-      const dbFilePath = process.argv[2];
-      const fields = await readDatabase(dbFilePath);
+      const dbFilePath = process.argv[2]; // Get file path from command line argument
+      const fields = await readDatabase(dbFilePath);       
       const fieldsSorted = Object.keys(fields).sort((a, b) =>
         a.localeCompare(b, undefined, { sensitivity: 'base' })
       );
